@@ -1,0 +1,101 @@
+﻿@page "/pomodoro"
+@inject IJSRuntime JSRuntime
+@using System.Timers
+
+
+
+<div style="display:grid; place-items:center"  id="outer-container">
+    <div id="inner-container">
+        <h1 style="font-size:3rem; font-weight:bold;" class="font-monospace">Pomodoro</h1>
+        <a class="github-button" href="https://github.com/cppshane/moe-pomodoro" data-icon="octicon-star" data-size="large" data-show-count="true"></a>
+        <div id="clock-container" @onclick="ToggleState">
+            <p class="p" id="time-text">@TimerString</p>
+            <div id="clock-background" style="background-color:@ClockBackgroundColor;"></div>
+            <div id="clock-foreground"></div>
+        </div>
+
+        <div id="reset-container" @onclick="Reset">
+            <img src="https://cdn.shaneduffy.io/moe-pomodoro/reset.webp" />
+            <div id="reset-background"></div>
+        </div>
+        <p>Pomodoro</p>
+    </div>
+</div>
+
+@code {
+    private static readonly TimeSpan WorkTimeSpan = TimeSpan.FromMinutes(25);
+    private static readonly TimeSpan BreakTimeSpan = TimeSpan.FromMinutes(5);
+    private static readonly string BlackClockColor = "rgba(0,0,0,0.3)";
+    private static readonly string GreenClockColor = "rgba(0, 255, 20, 0.15)";
+    private static readonly string BlueClockColor = "rgba(0, 184, 255, 0.1)";
+
+    private Timer _timer = new Timer(1000);
+    private string ClockBackgroundColor = BlackClockColor;
+    private bool _workMode = true;
+    private bool _timerActive = false;
+
+    private TimeSpan _originalTimeSpan = WorkTimeSpan;
+    private TimeSpan _clockTime = WorkTimeSpan;
+    private DateTime _startTime;
+
+    public string TimerString => _clockTime.ToString(@"mm\:ss");
+
+    public void Index()
+    {
+        _timer.Elapsed += (sender, e) => Tick(e.SignalTime);
+    }
+
+    private void StartTimer()
+    {
+        _startTime = DateTime.Now;
+        _timer.Start();
+    }
+
+    private void PauseTimer()
+    {
+        _timer.Stop();
+    }
+
+    private void Tick(DateTime signalTime)
+    {
+        var time = _originalTimeSpan.Subtract(signalTime - _startTime).Add(TimeSpan.FromSeconds(1));
+        if (_clockTime.TotalSeconds == 0)
+        {
+            Reset();
+        }
+        else
+        {
+            _clockTime = time;
+        }
+
+        InvokeAsync(StateHasChanged);
+    }
+
+    private void Reset()
+    {
+        _timer.Stop();
+        _originalTimeSpan = _workMode ? BreakTimeSpan : WorkTimeSpan;
+        ClockBackgroundColor = BlackClockColor;
+        _clockTime = _originalTimeSpan;
+        _workMode = !_workMode;
+        _timerActive = false;
+    }
+
+    private void ToggleState()
+    {
+        if (_timerActive)
+        {
+            _originalTimeSpan = _clockTime;
+            _timer.Stop();
+            ClockBackgroundColor = BlackClockColor;
+        }
+        else
+        {
+            _startTime = DateTime.Now;
+            _timer.Start();
+            ClockBackgroundColor = _workMode ? GreenClockColor : BlueClockColor;
+        }
+
+        _timerActive = !_timerActive;
+    }
+}

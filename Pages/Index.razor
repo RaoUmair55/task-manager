@@ -1,0 +1,71 @@
+﻿@page "/"
+@using Blazored.LocalStorage
+@using TaskManager.Data
+
+
+<h3 style="font-weight:bold" class="font-monospace p-2  ">Welcome To Dashboard</h3>
+<div style="border:1px solid lightgray; box-shadow:1px 6px 10px gray ; padding-top:1rem;padding:1rem; margin:2rem;">
+<div class="d-flex flex-wrap justify-content-center">
+    <!-- Task Summary Cards -->
+    <TaskSummaryCard Title="Total Tasks"
+                     Count="@TotalTasks"
+                     Description="All tasks assigned"
+                     CardHeaderColor="#6a67ce" />
+
+    <TaskSummaryCard Title="Completed Tasks"
+                     Count="@CompletedTasks"
+                     Description="Tasks completed successfully"
+                     CardHeaderColor="#28a745" />
+
+    <TaskSummaryCard Title="Remaining Tasks"
+                     Count="@RemainingTasks"
+                     Description="Tasks yet to be completed"
+                     CardHeaderColor="#dc3545" />
+</div>
+
+@* <div class="d-flex flex-wrap justify-content-center mt-4"> *@
+@*     <!-- Task Statistics (including charts and overview) --> *@
+@*     <TaskStatistics TotalTasks="TotalTasks" *@
+@*                     CompletedTasks="CompletedTasks" *@
+@*                     RemainingTasks="RemainingTasks" *@
+@*                     HighPriority="HighPriority" *@
+@*                     MediumPriority="MediumPriority" *@
+@*                     LowPriority="LowPriority" /> *@
+@* </div> *@
+
+<div class="d-flex justify-content-center">
+    <!-- Other Components -->
+    <CardWithCanvas TotalTasks="@TotalTasks" CompletedTasks="@CompletedTasks" />
+    <AddTask CardHeaderColor="#6c757d" />
+</div>
+</div>
+
+@code {
+    // Declare local storage service and task list
+    [Inject] private ILocalStorageService LocalStorage { get; set; }
+
+    private List<taskClass> Tasks { get; set; } = new List<taskClass>();
+
+    private int TotalTasks => Tasks.Count;
+    private int CompletedTasks => Tasks.Count(t => t.IsComplete);
+    private int RemainingTasks => TotalTasks - CompletedTasks;
+    
+    // Task priorities
+    private int HighPriority => Tasks.Count(t => t.Priority == "High");
+    private int MediumPriority => Tasks.Count(t => t.Priority == "Medium");
+    private int LowPriority => Tasks.Count(t => t.Priority == "Low");
+
+    // Load data on first render
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        // Load tasks from local storage
+        if (firstRender)
+        {
+            var storedTasks = await LocalStorage.GetItemAsync<List<taskClass>>("Task");
+            Tasks = storedTasks ?? new List<taskClass>(); // Use an empty list if no tasks are found
+
+            StateHasChanged();  // Trigger a re-render after data is loaded
+        }
+
+    }
+}

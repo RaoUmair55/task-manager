@@ -1,0 +1,301 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\TaskManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\pages\\managetasks.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:pages\\managetasks.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\wwwroot\\css\\clock.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:wwwroot\\css\\clock.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\pages\\pomodoro.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:pages\\pomodoro.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\wwwroot\\css\\pomodoro.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:wwwroot\\css\\pomodoro.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\pages\\taskboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:pages\\taskboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\shared\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:shared\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\pages\\cardwithcanvas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:pages\\cardwithcanvas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\wwwroot\\canvasscript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:wwwroot\\canvasscript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\pages\\component.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:pages\\component.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\data\\taskclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:data\\taskclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mohdu\\AppData\\Local\\Temp\\vtj5c3h4..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 18,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NavMenu.razor.css",
+              "DocumentMoniker": "D:\\TaskManager\\Shared\\NavMenu.razor.css",
+              "RelativeDocumentMoniker": "Shared\\NavMenu.razor.css",
+              "ToolTip": "D:\\TaskManager\\Shared\\NavMenu.razor.css",
+              "RelativeToolTip": "Shared\\NavMenu.razor.css",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAABoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-30T11:46:46.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\TaskManager\\Shared\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Shared\\MainLayout.razor",
+              "ToolTip": "D:\\TaskManager\\Shared\\MainLayout.razor",
+              "RelativeToolTip": "Shared\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T11:33:23.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "canvasScript.js",
+              "DocumentMoniker": "D:\\TaskManager\\wwwroot\\canvasScript.js",
+              "RelativeDocumentMoniker": "wwwroot\\canvasScript.js",
+              "ToolTip": "D:\\TaskManager\\wwwroot\\canvasScript.js",
+              "RelativeToolTip": "wwwroot\\canvasScript.js",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-29T19:29:57.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CardWithCanvas.razor",
+              "DocumentMoniker": "D:\\TaskManager\\Pages\\CardWithCanvas.razor",
+              "RelativeDocumentMoniker": "Pages\\CardWithCanvas.razor",
+              "ToolTip": "D:\\TaskManager\\Pages\\CardWithCanvas.razor",
+              "RelativeToolTip": "Pages\\CardWithCanvas.razor",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-29T19:26:35.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "clock.css",
+              "DocumentMoniker": "D:\\TaskManager\\wwwroot\\css\\clock.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\clock.css",
+              "ToolTip": "D:\\TaskManager\\wwwroot\\css\\clock.css",
+              "RelativeToolTip": "wwwroot\\css\\clock.css",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-29T19:02:03.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Component.razor",
+              "DocumentMoniker": "D:\\TaskManager\\Pages\\Component.razor",
+              "RelativeDocumentMoniker": "Pages\\Component.razor",
+              "ToolTip": "D:\\TaskManager\\Pages\\Component.razor",
+              "RelativeToolTip": "Pages\\Component.razor",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAABAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-29T19:00:13.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "pomodoro.css",
+              "DocumentMoniker": "D:\\TaskManager\\wwwroot\\css\\pomodoro.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\pomodoro.css",
+              "ToolTip": "D:\\TaskManager\\wwwroot\\css\\pomodoro.css",
+              "RelativeToolTip": "wwwroot\\css\\pomodoro.css",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAHgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-29T18:51:49.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Pomodoro.razor",
+              "DocumentMoniker": "D:\\TaskManager\\Pages\\Pomodoro.razor",
+              "RelativeDocumentMoniker": "Pages\\Pomodoro.razor",
+              "ToolTip": "D:\\TaskManager\\Pages\\Pomodoro.razor",
+              "RelativeToolTip": "Pages\\Pomodoro.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-29T18:49:19.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TaskBoard.razor",
+              "DocumentMoniker": "D:\\TaskManager\\Pages\\TaskBoard.razor",
+              "RelativeDocumentMoniker": "Pages\\TaskBoard.razor",
+              "ToolTip": "D:\\TaskManager\\Pages\\TaskBoard.razor",
+              "RelativeToolTip": "Pages\\TaskBoard.razor",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-29T18:27:44.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\TaskManager\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "D:\\TaskManager\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAHwBAAAAAAAAAAAAAIcBAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-29T14:27:18.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_Host.cshtml",
+              "DocumentMoniker": "D:\\TaskManager\\Pages\\_Host.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_Host.cshtml",
+              "ToolTip": "D:\\TaskManager\\Pages\\_Host.cshtml",
+              "RelativeToolTip": "Pages\\_Host.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-29T14:25:52.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.razor",
+              "DocumentMoniker": "D:\\TaskManager\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "Pages\\Index.razor",
+              "ToolTip": "D:\\TaskManager\\Pages\\Index.razor",
+              "RelativeToolTip": "Pages\\Index.razor",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-29T14:21:24.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "vtj5c3h4..sql",
+              "DocumentMoniker": "C:\\Users\\mohdu\\AppData\\Local\\Temp\\vtj5c3h4..sql",
+              "ToolTip": "C:\\Users\\mohdu\\AppData\\Local\\Temp\\vtj5c3h4..sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-12-29T13:09:14.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\TaskManager\\Shared\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Shared\\NavMenu.razor",
+              "ToolTip": "D:\\TaskManager\\Shared\\NavMenu.razor",
+              "RelativeToolTip": "Shared\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-29T11:36:21.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\TaskManager\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\TaskManager\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T11:33:37.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManageTasks.razor",
+              "DocumentMoniker": "D:\\TaskManager\\Pages\\ManageTasks.razor",
+              "RelativeDocumentMoniker": "Pages\\ManageTasks.razor",
+              "ToolTip": "D:\\TaskManager\\Pages\\ManageTasks.razor",
+              "RelativeToolTip": "Pages\\ManageTasks.razor",
+              "ViewState": "AgIAABsAAAAAAAAAAAAQwCoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-29T11:25:04.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "taskClass.cs",
+              "DocumentMoniker": "D:\\TaskManager\\Data\\taskClass.cs",
+              "RelativeDocumentMoniker": "Data\\taskClass.cs",
+              "ToolTip": "D:\\TaskManager\\Data\\taskClass.cs",
+              "RelativeToolTip": "Data\\taskClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T11:21:51.507Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

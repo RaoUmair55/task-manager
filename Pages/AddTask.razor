@@ -1,0 +1,19 @@
+﻿<div class="card add-task-card shadow-lg" style="max-width: 18rem;">
+    <div class="card-header text-center" style="background-color: @CardHeaderColor; color: #fff;">
+        <h5 class="card-title mb-0">Add New Task</h5>
+    </div>
+    <div class="card-body text-center">
+        <button class="btn btn-gradient btn-lg" @onclick="OnAddTaskClick">
+            <i class="fa fa-plus" aria-hidden="true"></i> Add Task
+        </button>
+    </div>
+</div>
+
+@code {
+    [Parameter] public string CardHeaderColor { get; set; } = "#6a67ce"; // Matches the theme of other cards
+
+    private void OnAddTaskClick()
+    {
+        Console.WriteLine("Add Task button clicked");
+    }
+}

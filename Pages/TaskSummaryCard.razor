@@ -1,0 +1,18 @@
+﻿<div class="task-summary-card">
+    <div class="card custom-card">
+        <div class="card-header" style="background-color:@CardHeaderColor;">
+            <h5 class="card-title">@Title</h5>
+        </div>
+        <div class="card-body">
+            <p class="card-text display-4">@Count</p>
+            <p class="card-text">@Description</p>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public string Title { get; set; } = "Title";
+    [Parameter] public string Description { get; set; } = "Description";
+    [Parameter] public int Count { get; set; } = 0;
+    [Parameter] public string CardHeaderColor { get; set; } = "#6a67ce";
+}

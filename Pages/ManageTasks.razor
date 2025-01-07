@@ -1,0 +1,138 @@
+﻿@page "/ManageTasks"
+@using Blazored.LocalStorage;
+@inject ILocalStorageService LocalStorage
+@attribute [Authorize]
+
+@using TaskManager.Data
+
+<PageTitle>Manage Tasks</PageTitle>
+
+<h1 style="font-size:2.5rem; font-weight:bold;" class="font-monospace">Manage Tasks</h1>
+<div class="container px-5">
+    <div style="margin-right:1rem ;" class="input-group px-5">
+        <label class="input-group-text">Task</label>
+        <input @bind="Task" class="form-control" />
+
+        <label class="input-group-text">Priority</label>
+        <select @bind="Priority" class="form-control">
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+        </select>
+
+        <button class="btn btn-dark mx-1" type="button" @onclick="saveTask">Save</button>
+    </div>
+
+    <h3 style="font-size:2rem; font-weight:bold;" class="font-monospace">Priority Matrix</h3>
+    <div class="priority-matrix mt-5 ">
+
+        <div class="matrix">
+            <!-- Low Priority Section -->
+            <div class="matrix-section low-priority">
+                <h4 style="font-size:2rem; font-weight:bold;" class="font-monospace">Low Priority</h4>
+                @foreach (var task in Tasks.Where(t => t.Priority == "Low"))
+                {
+                    <div style="border:1px solid black; border-radius:10px; background-color:#EFE6DD" class="task text-black d-flex justify-content-between align-content-center">
+                        <span style="display: block; text-decoration: @(task.IsComplete ? "line-through" : "none"); opacity: @(task.IsComplete? "60%":"100%")  ">@task.Task </span>
+                        <div>
+                            <button class="btn btn-outline-success btn-sm" @onclick="() => taskDone(task)">@(task.IsComplete ? "Mark as Incomplete" : "Mark as Complete")</button>
+                            <button class="btn btn-outline-secondary btn-sm" @onclick="() => taskEdit(task)">Edit</button>
+                            <button class="btn btn-outline-danger btn-sm" @onclick="() => taskRemove(task)">Remove</button>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <!-- Medium Priority Section -->
+            <div class="matrix-section medium-priority">
+                <h4 style="font-size:2rem; font-weight:bold;" class="font-monospace">Medium Priority</h4>
+                @foreach (var task in Tasks.Where(t => t.Priority == "Medium"))
+                {
+                    <div style="border:1px solid black; border-radius:10px;background-color:#d3ffd3" class="task text-black  d-flex justify-content-between align-content-center">
+                        <span style="display: block; text-decoration: @(task.IsComplete ? "line-through" : "none"); opacity: @(task.IsComplete? "60%":"100%")  ">@task.Task </span>
+                        <div>
+                            <button class="btn btn-outline-success btn-sm" @onclick="() => taskDone(task)">@(task.IsComplete ? "Mark as Incomplete" : "Mark as Complete")</button>
+                            <button class="btn btn-outline-secondary btn-sm" @onclick="() => taskEdit(task)">Edit</button>
+                            <button class="btn btn-outline-danger btn-sm" @onclick="() => taskRemove(task)">Remove</button>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <!-- High Priority Section -->
+            <div class="matrix-section high-priority">
+                <h4 style="font-size:2rem; font-weight:bold;" class="font-monospace" >High Priority</h4>
+                @foreach (var task in Tasks.Where(t => t.Priority == "High"))
+                {
+                    <div style="border:1px solid black; border-radius:10px;background-color:antiquewhite" class="task text-black  d-flex justify-content-between align-content-center">
+                        <span style="display: block; text-decoration: @(task.IsComplete ? "line-through" : "none"); opacity: @(task.IsComplete? "60%":"100%")  ">@task.Task </span>
+                        <div>
+                            <button class="btn btn-outline-success btn-sm" @onclick="() => taskDone(task)">@(task.IsComplete ? "Mark as Incomplete" : "Mark as Complete")</button>
+                            <button class="btn btn-outline-secondary btn-sm" @onclick="() => taskEdit(task)">Edit</button>
+                            <button class="btn btn-outline-danger btn-sm" @onclick="() => taskRemove(task)">Remove</button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string Task;
+    private string Priority = "Low";  // Default priority set to Low
+
+    private List<taskClass> Tasks { get; set; } = new List<taskClass>();
+
+    public async Task saveTask()
+    {
+        if (string.IsNullOrWhiteSpace(Task))
+        {
+            return;
+        }
+        taskClass newTask = new taskClass();
+        newTask.AddTask(Task, Priority);  // Pass priority when adding task
+        Task = "";
+        Priority = "Low";  // Reset to default priority after saving task
+        Tasks.Add(newTask);
+        await SaveTaskLocally(); // Persist changes
+    }
+
+    public async Task taskDone(taskClass task)
+    {
+        task.IsComplete = !task.IsComplete;
+        await SaveTaskLocally(); // Persist changes
+    }
+
+    public void taskEdit(taskClass task)
+    {
+        Task = task.Task;
+        Priority = task.Priority;  // Pre-populate priority when editing
+        Tasks.Remove(task);
+    }
+
+    public async Task taskRemove(taskClass task)
+    {
+        Tasks.Remove(task);
+        await SaveTaskLocally(); // Persist changes
+    }
+
+
+
+
+    public async Task SaveTaskLocally()
+    {
+        await LocalStorage.SetItemAsync("Task", Tasks);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadTask(); // Load existing tasks
+    }
+
+    private async Task LoadTask()
+    {
+        var storedTasks = await LocalStorage.GetItemAsync<List<taskClass>>("Task");
+        Tasks = storedTasks ?? new List<taskClass>();
+    }
+}

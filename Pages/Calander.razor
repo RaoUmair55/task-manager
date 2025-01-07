@@ -1,0 +1,23 @@
+﻿@inject IJSRuntime JS
+
+<div class="card custom-cardc">
+    <div class="card-header" style="background-color:@CardHeaderColor;">
+        <h5 class="card-title">Calendar</h5>
+    </div>
+    <div class="card-body">
+        <div id="calendar" class="calendar"></div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public string CardHeaderColor { get; set; } = "#6a67ce";
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Initialize FullCalendar on first render
+            await JS.InvokeVoidAsync("initializeCalendar");
+        }
+    }
+}

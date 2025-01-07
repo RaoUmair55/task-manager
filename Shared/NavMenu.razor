@@ -1,0 +1,52 @@
+﻿<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">TaskManager</a>
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+    <nav class="d-flex justify-content-evenly align-content-center align-items-center bg-dark">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Home
+            </NavLink>
+        </div>
+        <div class="nav-item px-3 ">
+            <NavLink class="nav-link" href="pomodoro" Match="NavLinkMatch.All">
+                <span class="oi oi-target" aria-hidden="true"></span> Focuse Mode
+            </NavLink>
+        </div>
+        <AuthorizeView>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="ManageTasks" Match="NavLinkMatch.All">
+                    <span class="oi oi-task" aria-hidden="true"></span> Manage Tasks
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="tasks" Match="NavLinkMatch.All">
+                    <span class="oi oi-list" aria-hidden="true"></span> Statistics
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="clock" Match="NavLinkMatch.All">
+                    <span class="oi oi-clock" aria-hidden="true"></span> Clock
+                </NavLink>
+            </div>
+            
+        </AuthorizeView>
+    </nav>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

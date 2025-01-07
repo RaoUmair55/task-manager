@@ -1,0 +1,67 @@
+﻿@page "/clock"
+
+
+<div class="blob"></div>
+<div id="container">
+    <div class="date @(IsHovered ? "" : "hidden")">
+        <div id="date">@Date</div><pre> </pre>
+        <div id="month">@Month</div><pre> </pre>
+        <div id="year">@Year</div>
+    </div>
+    <div class="@(IsHovered ? "" : "hidden")" id="day">@Day</div>
+    <div id="clock">
+        <div class="time" id="hours" @onmouseover="MouseEnterFnx" @onmouseout="MouseLeaveFnx">@Hours</div>:
+        <div class="time" id="minutes" @onmouseover="MouseEnterFnx" @onmouseout="MouseLeaveFnx">@Minutes</div>:
+        <div class="time" id="seconds" @onmouseover="MouseEnterFnx" @onmouseout="MouseLeaveFnx">@Seconds</div>
+    </div>
+</div>
+
+
+@code {
+    private string Day { get; set; } = string.Empty;
+    private string Date { get; set; } = string.Empty;
+    private string Month { get; set; } = string.Empty;
+    private string Year { get; set; } = string.Empty;
+    private string Hours { get; set; } = "00";
+    private string Minutes { get; set; } = "00";
+    private string Seconds { get; set; } = "00";
+    private bool IsHovered { get; set; } = false;
+
+    private readonly string[] Days = { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
+    private readonly string[] Months = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
+
+    protected override void OnInitialized()
+    {
+        UpdateTime();
+        _ = Task.Run(async () =>
+        {
+            while (true)
+            {
+                InvokeAsync(() => UpdateTime());
+                await Task.Delay(1000);
+            }
+        });
+    }
+
+    private void UpdateTime()
+    {
+        var now = DateTime.Now;
+        Day = Days[(int)now.DayOfWeek];
+        Date = now.Day.ToString("00");
+        Month = Months[now.Month - 1];
+        Year = now.Year.ToString();
+        Hours = now.Hour.ToString("00");
+        Minutes = now.Minute.ToString("00");
+        Seconds = now.Second.ToString("00");
+    }
+
+    private void MouseEnterFnx()
+    {
+        IsHovered = true;
+    }
+
+    private void MouseLeaveFnx()
+    {
+        IsHovered = false;
+    }
+}

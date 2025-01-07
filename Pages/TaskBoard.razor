@@ -1,0 +1,114 @@
+﻿@page "/tasks"
+@using System.Linq
+@using Blazored.LocalStorage
+@using System.Collections.Generic;
+@using TaskManager.Data
+@inject ILocalStorageService LocalStorage;
+@inject IJSRuntime JSRuntime
+
+<div class="container mt-4">
+    <h2 class="mb-4">Task Statistics</h2>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Task Overview</h5>
+                    <div class="mb-3">
+                        <label>Completion Rate</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: @CompletionRate%">
+                                @($"{CompletionRate:F1}%")
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <div class="border rounded p-3 text-center">
+                                <h3 class="text-primary">@CompletedTasks</h3>
+                                <p class="mb-0">Completed Tasks</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="border rounded p-3 text-center">
+                                <h3 class="text-warning">@PendingTasks</h3>
+                                <p class="mb-0">Pending Tasks</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Priority Distribution</h5>
+                    <div style="height: 300px;">
+                        <canvas id="priorityChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-4 mb-4">
+            <div class="card bg-primary text-white">
+                <div class="card-body text-center">
+                    <h6>Total Tasks</h6>
+                    <h2>@TotalTasks</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card bg-warning text-white">
+                <div class="card-body text-center">
+                    <h6>In Progress</h6>
+                    <h2>@PendingTasks</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card bg-success text-white">
+                <div class="card-body text-center">
+                    <h6>Completed Today</h6>
+                    <h2>@CompletedTasks</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private List<taskClass> Tasks { get; set; } = new List<taskClass>();
+
+    private int TotalTasks => Tasks.Count;
+    private int CompletedTasks => Tasks.Count(t => t.IsComplete);
+    private int PendingTasks => Tasks.Count(t => !t.IsComplete);
+    private double CompletionRate => TotalTasks > 0 ? (double)CompletedTasks / TotalTasks * 100 : 0;
+
+    private int HighPriority => Tasks.Count(t => t.Priority == "High");
+    private int MediumPriority => Tasks.Count(t => t.Priority == "Medium");
+    private int LowPriority => Tasks.Count(t => t.Priority == "Low");
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Load tasks from local storage
+            var storedTasks = await LocalStorage.GetItemAsync<List<taskClass>>("Task");
+            Tasks = storedTasks ?? new List<taskClass>();  // Fallback to an empty list if nothing is found
+
+            // After loading the tasks, we can trigger the recalculation of statistics
+            StateHasChanged();  // This forces a re-render so that the statistics are updated
+
+            // Now render the priority distribution chart
+            await JSRuntime.InvokeVoidAsync("renderPieChart", "priorityChart", new[] { HighPriority, MediumPriority, LowPriority });
+        }
+    }
+}
+

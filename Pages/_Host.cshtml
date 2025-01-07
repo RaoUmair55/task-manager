@@ -1,0 +1,42 @@
+﻿@page "/"
+@namespace TaskManager.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "_Layout";
+
+}
+
+<component type="typeof(App)" render-mode="ServerPrerendered" />
+
+<script src="canvasScript.js"></script>
+
+<link href="~/css/pomodoro.css" rel="stylesheet" />
+<link href="~/css/clock.css" rel="stylesheet" />
+
+
+<!-- FullCalendar CDN -->
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
+
+
+<!-- Custom JavaScript -->
+<script src="~/js/animation.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    function renderPieChart(chartId, data) {
+        var ctx = document.getElementById(chartId).getContext('2d');
+        new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['High', 'Medium', 'Low'],
+                datasets: [{
+                    label: 'Priority Distribution',
+                    data: data,
+                    backgroundColor: ['#ff3d00', '#ff9800', '#8bc34a'],
+                    borderColor: '#fff',
+                    borderWidth: 1
+                }]
+            }
+        });
+    }
+</script>
