@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\TaskManager\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -77,7 +81,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -88,12 +92,25 @@
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "D:\\TaskManager\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "D:\\TaskManager\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-07T18:03:12.849Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "NavMenu.razor.css",
               "DocumentMoniker": "D:\\TaskManager\\Shared\\NavMenu.razor.css",
               "RelativeDocumentMoniker": "Shared\\NavMenu.razor.css",
@@ -106,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "D:\\TaskManager\\Shared\\MainLayout.razor",
               "RelativeDocumentMoniker": "Shared\\MainLayout.razor",
@@ -119,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "canvasScript.js",
               "DocumentMoniker": "D:\\TaskManager\\wwwroot\\canvasScript.js",
               "RelativeDocumentMoniker": "wwwroot\\canvasScript.js",
@@ -131,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "CardWithCanvas.razor",
               "DocumentMoniker": "D:\\TaskManager\\Pages\\CardWithCanvas.razor",
               "RelativeDocumentMoniker": "Pages\\CardWithCanvas.razor",
@@ -143,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "clock.css",
               "DocumentMoniker": "D:\\TaskManager\\wwwroot\\css\\clock.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\clock.css",
@@ -155,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Component.razor",
               "DocumentMoniker": "D:\\TaskManager\\Pages\\Component.razor",
               "RelativeDocumentMoniker": "Pages\\Component.razor",
@@ -167,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "pomodoro.css",
               "DocumentMoniker": "D:\\TaskManager\\wwwroot\\css\\pomodoro.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\pomodoro.css",
@@ -179,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Pomodoro.razor",
               "DocumentMoniker": "D:\\TaskManager\\Pages\\Pomodoro.razor",
               "RelativeDocumentMoniker": "Pages\\Pomodoro.razor",
@@ -191,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "TaskBoard.razor",
               "DocumentMoniker": "D:\\TaskManager\\Pages\\TaskBoard.razor",
               "RelativeDocumentMoniker": "Pages\\TaskBoard.razor",
@@ -203,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "site.css",
               "DocumentMoniker": "D:\\TaskManager\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -215,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "_Host.cshtml",
               "DocumentMoniker": "D:\\TaskManager\\Pages\\_Host.cshtml",
               "RelativeDocumentMoniker": "Pages\\_Host.cshtml",
@@ -228,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Index.razor",
               "DocumentMoniker": "D:\\TaskManager\\Pages\\Index.razor",
               "RelativeDocumentMoniker": "Pages\\Index.razor",
@@ -240,7 +257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "vtj5c3h4..sql",
               "DocumentMoniker": "C:\\Users\\mohdu\\AppData\\Local\\Temp\\vtj5c3h4..sql",
               "ToolTip": "C:\\Users\\mohdu\\AppData\\Local\\Temp\\vtj5c3h4..sql",
@@ -249,20 +266,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "D:\\TaskManager\\Shared\\NavMenu.razor",
               "RelativeDocumentMoniker": "Shared\\NavMenu.razor",
               "ToolTip": "D:\\TaskManager\\Shared\\NavMenu.razor",
               "RelativeToolTip": "Shared\\NavMenu.razor",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACUAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-29T11:36:21.235Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\TaskManager\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -274,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ManageTasks.razor",
               "DocumentMoniker": "D:\\TaskManager\\Pages\\ManageTasks.razor",
               "RelativeDocumentMoniker": "Pages\\ManageTasks.razor",
@@ -287,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "taskClass.cs",
               "DocumentMoniker": "D:\\TaskManager\\Data\\taskClass.cs",
               "RelativeDocumentMoniker": "Data\\taskClass.cs",

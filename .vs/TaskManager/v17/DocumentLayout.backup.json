@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "D:\\TaskManager\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\shared\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:shared\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\pages\\managetasks.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:pages\\managetasks.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -27,20 +43,8 @@
       "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\pages\\taskboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:pages\\taskboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\shared\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:shared\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\pages\\cardwithcanvas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -53,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\pages\\component.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:pages\\component.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|solutionrelative:pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B54D71C9-4839-49B7-8815-C7D06F9B75AC}|TaskManager.csproj|d:\\taskmanager\\data\\taskclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -77,7 +77,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -88,8 +88,12 @@
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "NavMenu.razor.css",
               "DocumentMoniker": "D:\\TaskManager\\Shared\\NavMenu.razor.css",
               "RelativeDocumentMoniker": "Shared\\NavMenu.razor.css",
@@ -97,11 +101,12 @@
               "RelativeToolTip": "Shared\\NavMenu.razor.css",
               "ViewState": "AgIAABMAAAAAAAAAAAAAABoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-12-30T11:46:46.89Z"
+              "WhenOpened": "2024-12-30T11:46:46.89Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "D:\\TaskManager\\Shared\\MainLayout.razor",
               "RelativeDocumentMoniker": "Shared\\MainLayout.razor",
@@ -109,11 +114,12 @@
               "RelativeToolTip": "Shared\\MainLayout.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-30T11:33:23.934Z"
+              "WhenOpened": "2024-12-30T11:33:23.934Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "canvasScript.js",
               "DocumentMoniker": "D:\\TaskManager\\wwwroot\\canvasScript.js",
               "RelativeDocumentMoniker": "wwwroot\\canvasScript.js",
@@ -125,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "CardWithCanvas.razor",
               "DocumentMoniker": "D:\\TaskManager\\Pages\\CardWithCanvas.razor",
               "RelativeDocumentMoniker": "Pages\\CardWithCanvas.razor",
@@ -137,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "clock.css",
               "DocumentMoniker": "D:\\TaskManager\\wwwroot\\css\\clock.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\clock.css",
@@ -149,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Component.razor",
               "DocumentMoniker": "D:\\TaskManager\\Pages\\Component.razor",
               "RelativeDocumentMoniker": "Pages\\Component.razor",
@@ -161,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "pomodoro.css",
               "DocumentMoniker": "D:\\TaskManager\\wwwroot\\css\\pomodoro.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\pomodoro.css",
@@ -173,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Pomodoro.razor",
               "DocumentMoniker": "D:\\TaskManager\\Pages\\Pomodoro.razor",
               "RelativeDocumentMoniker": "Pages\\Pomodoro.razor",
@@ -185,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "TaskBoard.razor",
               "DocumentMoniker": "D:\\TaskManager\\Pages\\TaskBoard.razor",
               "RelativeDocumentMoniker": "Pages\\TaskBoard.razor",
@@ -197,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "site.css",
               "DocumentMoniker": "D:\\TaskManager\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -209,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "_Host.cshtml",
               "DocumentMoniker": "D:\\TaskManager\\Pages\\_Host.cshtml",
               "RelativeDocumentMoniker": "Pages\\_Host.cshtml",
@@ -217,11 +223,12 @@
               "RelativeToolTip": "Pages\\_Host.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-29T14:25:52.526Z"
+              "WhenOpened": "2024-12-29T14:25:52.526Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Index.razor",
               "DocumentMoniker": "D:\\TaskManager\\Pages\\Index.razor",
               "RelativeDocumentMoniker": "Pages\\Index.razor",
@@ -242,15 +249,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "D:\\TaskManager\\Shared\\NavMenu.razor",
               "RelativeDocumentMoniker": "Shared\\NavMenu.razor",
               "ToolTip": "D:\\TaskManager\\Shared\\NavMenu.razor",
               "RelativeToolTip": "Shared\\NavMenu.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACUAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-29T11:36:21.235Z"
+              "WhenOpened": "2024-12-29T11:36:21.235Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -266,13 +274,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ManageTasks.razor",
               "DocumentMoniker": "D:\\TaskManager\\Pages\\ManageTasks.razor",
               "RelativeDocumentMoniker": "Pages\\ManageTasks.razor",
               "ToolTip": "D:\\TaskManager\\Pages\\ManageTasks.razor",
               "RelativeToolTip": "Pages\\ManageTasks.razor",
-              "ViewState": "AgIAABsAAAAAAAAAAAAQwCUAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwCUAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-29T11:25:04.702Z",
               "EditorCaption": ""
