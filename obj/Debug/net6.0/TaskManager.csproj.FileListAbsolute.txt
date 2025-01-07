@@ -243,3 +243,4 @@ D:\TaskManager\obj\Debug\net6.0\refint\TaskManager.dll
 D:\TaskManager\obj\Debug\net6.0\TaskManager.pdb
 D:\TaskManager\obj\Debug\net6.0\TaskManager.genruntimeconfig.cache
 D:\TaskManager\obj\Debug\net6.0\ref\TaskManager.dll
+D:\TaskManager\obj\Debug\net6.0\TaskManager.sourcelink.json
